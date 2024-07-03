@@ -70,7 +70,7 @@ async function init() {
  * Stich the rout to the server
  */
 require("./routes/auth.routes")(app)
-
+require("./routes/category.routes")(app)
 
 
 /**

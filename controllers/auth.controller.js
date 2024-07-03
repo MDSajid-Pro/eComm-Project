@@ -76,7 +76,7 @@ exports.signin = async (req, res)=> {
         })
     }
 
-    // Using jet we will create the access token with a given TTL and return
+    // Using jwt we will create the access token with a given TTL and return
 
     const token = jwt.sign({ id: user.userId }, secret.secret, {
         expiresIn : 120
